@@ -1,0 +1,15 @@
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\bin\Debug\net8.0\ConsoleAppEsericiziDate.exe
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\bin\Debug\net8.0\ConsoleAppEsericiziDate.deps.json
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\bin\Debug\net8.0\ConsoleAppEsericiziDate.runtimeconfig.json
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\bin\Debug\net8.0\ConsoleAppEsericiziDate.dll
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\bin\Debug\net8.0\ConsoleAppEsericiziDate.pdb
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.GeneratedMSBuildEditorConfig.editorconfig
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.AssemblyInfoInputs.cache
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.AssemblyInfo.cs
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.csproj.CoreCompileInputs.cache
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.sourcelink.json
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.dll
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\refint\ConsoleAppEsericiziDate.dll
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.pdb
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ConsoleAppEsericiziDate.genruntimeconfig.cache
+P:\GitHub\School_GitHub_IV\Informatica Molara\Informatica-Molara\ConsoleAppEsericiziDate\ConsoleAppEsericiziDate\obj\Debug\net8.0\ref\ConsoleAppEsericiziDate.dll
