@@ -1,0 +1,15 @@
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.GeneratedMSBuildEditorConfig.editorconfig
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.AssemblyInfoInputs.cache
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.AssemblyInfo.cs
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.csproj.CoreCompileInputs.cache
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.sourcelink.json
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\bin\Debug\net8.0\ConsoleAppGestoreAlunni.exe
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\bin\Debug\net8.0\ConsoleAppGestoreAlunni.deps.json
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\bin\Debug\net8.0\ConsoleAppGestoreAlunni.runtimeconfig.json
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\bin\Debug\net8.0\ConsoleAppGestoreAlunni.dll
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\bin\Debug\net8.0\ConsoleAppGestoreAlunni.pdb
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.dll
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\refint\ConsoleAppGestoreAlunni.dll
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.pdb
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ConsoleAppGestoreAlunni.genruntimeconfig.cache
+Z:\School_GitHub_IV\Informatica-Teoria\Informatica-Molara\ConsoleAppGestoreAlunni\ConsoleAppGestoreAlunni\obj\Debug\net8.0\ref\ConsoleAppGestoreAlunni.dll

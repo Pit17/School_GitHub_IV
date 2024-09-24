@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\School_GitHub_IV\\Informatica-Teoria\\Informatica-Molara\\ConsoleAppGestoreAlunni\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA691704-6A79-4841-9A3D-302CC3E49028}|ConsoleAppGestoreAlunni\\ConsoleAppGestoreAlunni.csproj|z:\\school_github_iv\\informatica-teoria\\informatica-molara\\consoleappgestorealunni\\consoleappgestorealunni\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA691704-6A79-4841-9A3D-302CC3E49028}|ConsoleAppGestoreAlunni\\ConsoleAppGestoreAlunni.csproj|solutionrelative:consoleappgestorealunni\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\School_GitHub_IV\\Informatica-Teoria\\Informatica-Molara\\ConsoleAppGestoreAlunni\\ConsoleAppGestoreAlunni\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleAppGestoreAlunni\\Program.cs",
+              "ToolTip": "Z:\\School_GitHub_IV\\Informatica-Teoria\\Informatica-Molara\\ConsoleAppGestoreAlunni\\ConsoleAppGestoreAlunni\\Program.cs",
+              "RelativeToolTip": "ConsoleAppGestoreAlunni\\Program.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwFIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T07:13:07.17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
