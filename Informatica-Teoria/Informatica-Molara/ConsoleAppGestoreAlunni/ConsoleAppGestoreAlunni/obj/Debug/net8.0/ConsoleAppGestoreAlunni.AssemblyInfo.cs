@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleAppGestoreAlunni")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e2d65fb2c01a016fa4db38f2ed33049b4ce2260")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de94be16041e433aefde1dcf1d9c15ee8fd4df98")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleAppGestoreAlunni")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleAppGestoreAlunni")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

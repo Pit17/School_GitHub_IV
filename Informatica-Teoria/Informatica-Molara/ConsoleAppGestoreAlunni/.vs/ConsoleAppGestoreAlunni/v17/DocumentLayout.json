@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +28,7 @@
               "RelativeDocumentMoniker": "ConsoleAppGestoreAlunni\\Program.cs",
               "ToolTip": "Z:\\School_GitHub_IV\\Informatica-Teoria\\Informatica-Molara\\ConsoleAppGestoreAlunni\\ConsoleAppGestoreAlunni\\Program.cs",
               "RelativeToolTip": "ConsoleAppGestoreAlunni\\Program.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwFIAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T07:13:07.17Z",
               "EditorCaption": ""

@@ -5,14 +5,16 @@ namespace ConsoleAppGestoreAlunni
 {
     class Alunno//classe che gestisce i dati di ogni studente
     {
-        private string Nome;
-        private string Cognome;
-        private char Sesso;
-        private DateOnly data_nascita;
-        private string Classe;
-        private int Anno;
-        private char Sezione;
-        private string indirizzo_scolastico;
+        public string Nome { get; private set; }
+        public string Cognome { get; private set; }
+        public char Sesso { get; private set; }
+        public DateOnly data_nascita { get; private set; }
+        public string Classe { get; private set; }
+        public int Anno { get; private set; }
+        public char Sezione { get; private set; }
+        public string indirizzo_scolastico { get; private set; }
+
+        private double eta;
 
         public Alunno(string nome, string cognome, char sesso, DateOnly data, string classe, string indirizzo)//costruttore
         {
@@ -25,6 +27,14 @@ namespace ConsoleAppGestoreAlunni
             Sezione= Classe[1];
             indirizzo_scolastico = indirizzo;
         }
+        public double Calcolatore() 
+        { 
+            DateOnly oggi = DateOnly.FromDateTime(DateTime.Now);
+            return (oggi.DayNumber - this.data_nascita.DayNumber) / 365.25;
+        
+        }
+
+
 
         public override string ToString()//per stampare i dati
         {
@@ -60,6 +70,8 @@ namespace ConsoleAppGestoreAlunni
                 sr.Close();
             }
 
+
+
             using (StreamWriter sw = new StreamWriter(@"../../../elenco-alunni-classi-elaborato.txt"))
             {
                 foreach (Alunno alunno in gestore)//ristampo come da file tutti i dati
@@ -72,7 +84,7 @@ namespace ConsoleAppGestoreAlunni
             }
 
         }
-
+        
         static void Main()//richiamo la funzione
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
