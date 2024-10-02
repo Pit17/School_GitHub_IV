@@ -1,0 +1,14 @@
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\bin\Debug\net8.0\OTP_ConsoleApp.exe
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\bin\Debug\net8.0\OTP_ConsoleApp.deps.json
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\bin\Debug\net8.0\OTP_ConsoleApp.runtimeconfig.json
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\bin\Debug\net8.0\OTP_ConsoleApp.dll
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\bin\Debug\net8.0\OTP_ConsoleApp.pdb
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.AssemblyInfo.cs
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.dll
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\refint\OTP_ConsoleApp.dll
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.pdb
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\OTP_ConsoleApp.genruntimeconfig.cache
+C:\Users\pietro.malzone\source\repos\OTP_ConsoleApp\OTP_ConsoleApp\obj\Debug\net8.0\ref\OTP_ConsoleApp.dll
