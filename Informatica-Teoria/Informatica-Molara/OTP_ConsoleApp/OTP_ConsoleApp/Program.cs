@@ -58,9 +58,10 @@ namespace OTP_ConsoleApp
             string msg_str = "Il Ping of Death è un tipo di attacco Denial of Service che consiste nell'invio di un pacchetto IP malformato";
             string key_str = "Silvio Berlusconi è stato un imprenditore e politico italiano, fondatore del gruppo Fininvest e quattro volte Presidente del Consiglio dei ministri della Repubblica Italiana.";
 
+            SymmetricCrypt.Crypt(msg_str, key_str);
 
-            
-           
+
+
         }
     }
 }

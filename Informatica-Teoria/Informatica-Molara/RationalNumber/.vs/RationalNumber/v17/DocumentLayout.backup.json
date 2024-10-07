@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Utente\\source\\repos\\RationalNumber\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD197AA-AD79-4ED8-9FEF-E06C44EB984A}|RationalNumber\\RationalNumber.csproj|c:\\users\\utente\\source\\repos\\rationalnumber\\rationalnumber\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD197AA-AD79-4ED8-9FEF-E06C44EB984A}|RationalNumber\\RationalNumber.csproj|solutionrelative:rationalnumber\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Utente\\source\\repos\\RationalNumber\\RationalNumber\\Program.cs",
+              "RelativeDocumentMoniker": "RationalNumber\\Program.cs",
+              "ToolTip": "C:\\Users\\Utente\\source\\repos\\RationalNumber\\RationalNumber\\Program.cs*",
+              "RelativeToolTip": "RationalNumber\\Program.cs*",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAwIQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:54:28.59Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
