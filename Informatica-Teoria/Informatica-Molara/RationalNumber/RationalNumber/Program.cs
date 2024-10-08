@@ -22,7 +22,7 @@ namespace RationalNumber
 
         public RationalNumber(int num, int den)
         {
-            if (num == 0)
+            if (den == 0)
                 throw new Exception("Invalid denominator value");
 
             this.num = num;
@@ -57,8 +57,6 @@ namespace RationalNumber
         public static RationalNumber operator *(RationalNumber a, RationalNumber b)
         {
             return new RationalNumber(a.num * b.num, a.den * b.den);
-
-
         }
         public static RationalNumber operator /(RationalNumber a, RationalNumber b)
         {
