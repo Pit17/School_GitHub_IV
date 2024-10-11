@@ -5,7 +5,7 @@ namespace BitArrays
     class BitArray
     {
         private const int BITS_PER_VALUE = 32;  // ogni (unit) ha 32 bit
-        private uint[] bits;
+        private ulong[] bits;
         private long n_bits;
 
         public BitArray(long n_bits, bool initial_value)
@@ -17,7 +17,7 @@ namespace BitArrays
             if (n_uints > int.MaxValue - 60)  // il valore massimo è stato trovato per tentativi
                 throw new OverflowException("Too many bits");
 
-            this.bits = new uint[n_uints];
+            this.bits = new ulong[n_uints];
             this.n_bits = n_bits;
             SetAllBits(initial_value);
         }
@@ -35,7 +35,7 @@ namespace BitArrays
         {
             long indice = bit_index / BITS_PER_VALUE;
             long posizione = bit_index % BITS_PER_VALUE;
-            uint bitmask = (uint)(1 << (int)posizione);
+            ulong bitmask = (ulong)(1 << (int)posizione);
             
             return (bits[indice] & bitmask) != 0;
 
@@ -44,7 +44,7 @@ namespace BitArrays
         {
             long indice = bit_index / BITS_PER_VALUE;
             long posizione = bit_index % BITS_PER_VALUE;
-            uint bitmask = (uint)(1 << (int)posizione);
+            ulong bitmask = (ulong)(1 << (int)posizione);
 
             if (value)
             {
@@ -89,7 +89,7 @@ namespace BitArrays
 
         static void Main(string[] args)
         {
-            List<long> primes = EratosthenesSieve(80_000_000);
+            List<long> primes = EratosthenesSieve(120_000_000);
 
             foreach (long n in primes)
                 Console.Write($"{n}, ");
