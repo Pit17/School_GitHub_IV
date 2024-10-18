@@ -34,7 +34,21 @@ namespace Ereditarieta
     }
     class Triangolo : Poligono
     {
-        
+        private double base1,lato2,lato3,altezza;
+        public Triangolo(double base1,double lato2,double lato3,double altezza)
+            : base()
+        {
+            Area = base1 * altezza;
+            Perimetro = base1+lato2+lato3;
+        }
+        public double Lato2 { get { return lato2; } }
+        public double Lato3 { get { return lato3; } }
+        public double Base1 { get { return base1; } }
+        public double Altezza { get { return altezza; } }
+        public override string Riassumiti()
+        {
+            return base.Riassumiti() + $"---lato2={Lato2}---lato3={Lato3}---base={Base1}---altezza={Altezza}";
+        }
     }
     class Quadrato : Poligono
     {
