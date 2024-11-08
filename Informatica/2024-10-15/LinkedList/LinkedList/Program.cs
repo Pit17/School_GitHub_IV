@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-
+//Pietro MAlzone 4H 15/10/2024
 namespace LinkedList
 {
 
@@ -18,16 +18,6 @@ namespace LinkedList
         public LinkedList()
         {
             head = null;
-        }
-        public void PrintList()
-        {
-            Node curr = head;
-            for (int i = 0;curr != null; i++)
-            {
-                Console.Write(curr.value + ", ");
-                curr = curr.next;
-            }
-
         }
 
         public int Count 
@@ -91,13 +81,10 @@ namespace LinkedList
         }
         public void RemoveAt(int idx)
         {
-
             Node node = head;
-            if (idx == 0 ) head = node.next;
             for(int i = 0; i < idx && node != null; ++i)
             {
-                if (i != idx-1) node = node.next;
-
+                node = node.next;
             }
             if (node.next == null) throw new IndexOutOfRangeException();
             Node next = node.next;
@@ -107,7 +94,7 @@ namespace LinkedList
             }
             else
             {
-                node.next = next.next;
+                node.next = next;
             }            
 
         }
@@ -187,7 +174,6 @@ namespace LinkedList
 
             return -1;
         }
-        
 
         // i metodi che seguono sono stati presi da https://classroom.google.com/c/NjI0MDAwODEyNDMx/m/NjcyOTQ3NjgwMjM5/details
         private void Realloc(int new_capacity)
@@ -224,18 +210,6 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList linkedList = new LinkedList();
-            linkedList.Add(5);
-            linkedList.Add(3);
-            linkedList.Add(-1);
-            linkedList.Add(12);
-            linkedList.PrintList();
-            Console.WriteLine();
-            linkedList.RemoveAt(2);
-            linkedList.RemoveValue(5);
-            linkedList.PrintList();
-
-
         }
     }
 }

@@ -26,32 +26,41 @@ namespace ConsoleAppThreadCorsa
             SetCursorPosition(posAndrea, 5);
             Write(@"  /\");
             SetCursorPosition(posAndrea, 6);
-            ForegroundColor = ConsoleColor.DarkRed;                                                                                              //
+            ForegroundColor = ConsoleColor.White;      
+            Write("                                                                                                                   ¦▒▒▒¦");
+            ForegroundColor = ConsoleColor.DarkRed;
+            SetCursorPosition(posAndrea, 7);
             Write("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄¦▄▄▄¦");
 
             ForegroundColor = ConsoleColor.Yellow;
-            SetCursorPosition(posBaldo, 7);//Baldo
+            SetCursorPosition(posBaldo, 8);//Baldo
             Write("Baldo");
-            SetCursorPosition(posBaldo, 8);
-            Write("  ()");
             SetCursorPosition(posBaldo, 9);
-            Write(@" ┌▓▓┘");
+            Write("  ()");
             SetCursorPosition(posBaldo, 10);
+            Write(@" ┌▓▓┘");
+            SetCursorPosition(posBaldo, 11);
             Write(@"  /\");
-            SetCursorPosition(posAndrea, 11);
+            SetCursorPosition(posAndrea, 12);
+            ForegroundColor = ConsoleColor.White;
+            Write("                                                                                                                   ¦▒▒▒¦");
+            SetCursorPosition(posAndrea, 13);
             ForegroundColor = ConsoleColor.DarkRed;
             Write("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄¦▄▄▄¦");
 
             ForegroundColor = ConsoleColor.Cyan;
-            SetCursorPosition(posCarlo, 12);//Carlo
+            SetCursorPosition(posCarlo, 14);//Carlo
             Write("Carlo");
-            SetCursorPosition(posCarlo, 13);
-            Write("  {}");
-            SetCursorPosition(posCarlo, 14);
-            Write(@" ┌▒▒┘");
             SetCursorPosition(posCarlo, 15);
+            Write("  {}");
+            SetCursorPosition(posCarlo, 16);
+            Write(@" ┌▒▒┘");
+            SetCursorPosition(posCarlo, 17);
             Write(@"  /\");
-            SetCursorPosition(posAndrea, 16);
+            SetCursorPosition(posAndrea, 18);
+            ForegroundColor = ConsoleColor.White;
+            Write("                                                                                                                   ¦▒▒▒¦");
+            SetCursorPosition(posAndrea, 19);
             ForegroundColor = ConsoleColor.DarkRed;
             Write("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄¦▄▄▄¦");
         }
@@ -61,7 +70,7 @@ namespace ConsoleAppThreadCorsa
             do//aggiorno la posizione di Andrea
             {
                 posAndrea++;
-                Thread.Sleep(30);
+                Thread.Sleep(50);
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Green;
@@ -75,7 +84,7 @@ namespace ConsoleAppThreadCorsa
                     SetCursorPosition(posAndrea, 4);
                     Write(@" ¯¯¯░░╝");
                 }
-                Thread.Sleep(30);
+                Thread.Sleep(50);
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Green;
@@ -84,7 +93,7 @@ namespace ConsoleAppThreadCorsa
                 }
 
 
-            } while (posAndrea < 110);
+            } while (posAndrea < 112);
             
             lock (_lockConsole)//gestisce la console
             {
@@ -107,14 +116,14 @@ namespace ConsoleAppThreadCorsa
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Yellow;
-                    SetCursorPosition(posBaldo, 10);
+                    SetCursorPosition(posBaldo, 11);
                     Write(@"  /\");
                 }
                 Thread.Sleep(50);
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Yellow;
-                    SetCursorPosition(posBaldo, 9);
+                    SetCursorPosition(posBaldo, 10);
                     Write(@" ┌▓▓┘");
                 }
                 
@@ -122,7 +131,7 @@ namespace ConsoleAppThreadCorsa
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Yellow;
-                    SetCursorPosition(posBaldo, 8);
+                    SetCursorPosition(posBaldo, 9);
                     Write("  ()");
                 }
                 
@@ -137,7 +146,7 @@ namespace ConsoleAppThreadCorsa
 
                 }
                 ForegroundColor = ConsoleColor.Yellow;
-                SetCursorPosition(115, 7);
+                SetCursorPosition(115, 8);
                 Write(classifica);
             }
         }
@@ -150,7 +159,7 @@ namespace ConsoleAppThreadCorsa
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Cyan;
-                    SetCursorPosition(posCarlo, 15);
+                    SetCursorPosition(posCarlo, 17);
                     Write(@"  /\");
                 }
                 
@@ -158,14 +167,14 @@ namespace ConsoleAppThreadCorsa
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Cyan;
-                    SetCursorPosition(posCarlo, 14);
+                    SetCursorPosition(posCarlo, 16);
                     Write(@" ┌▒▒┘");
                 }
                 Thread.Sleep(50);
                 lock (_lockConsole)
                 {
                     ForegroundColor = ConsoleColor.Cyan;
-                    SetCursorPosition(posCarlo, 13);
+                    SetCursorPosition(posCarlo, 15);
                     Write("  {}");
                 }
 
@@ -178,7 +187,7 @@ namespace ConsoleAppThreadCorsa
                     classifica++;
                 }
                 ForegroundColor = ConsoleColor.Cyan;
-                SetCursorPosition(115, 12);
+                SetCursorPosition(115, 14);
                 Write(classifica);
             }
         }
