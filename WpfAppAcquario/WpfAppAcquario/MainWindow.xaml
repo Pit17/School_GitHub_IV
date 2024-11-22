@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppAcquario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAcquario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Canvas x:Name="Acquario"  Height="300"  Width="500" Margin="276,42,19,41">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/istockphoto-642258650-612x612.jpg"/>
+            </Canvas.Background>
+        </Canvas>
+        <TextBox x:Name="Contatore" HorizontalAlignment="Left" Margin="71,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

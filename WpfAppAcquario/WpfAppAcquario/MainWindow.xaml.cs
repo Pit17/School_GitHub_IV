@@ -1,0 +1,56 @@
+﻿using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Windows.Threading;
+//Malzone Pietro 4H 22/11/2024 wpf app acquario
+namespace WpfAppAcquario
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SetupTimer();
+        }
+        DispatcherTimer timer;
+        void SetupTimer()
+        {
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += new EventHandler(timer_tick);
+            timer.Start();
+
+        }
+        int i = 0;
+        
+        void timer_tick(object sender,EventArgs args)
+        {
+            i++;
+            Contatore.Text = i.ToString();
+            
+        }
+        Image immagine;
+        private void AggiungiOggetti()
+        {
+            Uri source;// to do sistemare
+            source = new Uri(@"/images/titanic.png", UriKind.RelativeOrAbsolute);
+            BitmapImage bitmpas = new BitmapImage(source);
+            immagine = new Image();
+            immagine.Source = bitmpas;
+            immagine.Margin = new Thickness(300, 50, 0, 0);
+            Acquario.Children.Add(immagine);
+        }
+
+        
+    }
+}
