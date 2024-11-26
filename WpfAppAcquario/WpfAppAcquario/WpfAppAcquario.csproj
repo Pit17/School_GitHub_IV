@@ -9,11 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="istockphoto-642258650-612x612.jpg" />
+    <None Remove="Images\Fish.png" />
+    <None Remove="Images\Sfondo.png" />
+    <None Remove="Images\titanic.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="istockphoto-642258650-612x612.jpg" />
+    <Resource Include="Images\Sfondo.png" />
+    <Content Include="Images\Fish.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\titanic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

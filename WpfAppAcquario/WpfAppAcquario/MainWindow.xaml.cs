@@ -21,6 +21,7 @@ namespace WpfAppAcquario
         {
             InitializeComponent();
             SetupTimer();
+            AggiungiOggetti();
         }
         DispatcherTimer timer;
         void SetupTimer()
@@ -42,15 +43,35 @@ namespace WpfAppAcquario
         Image immagine;
         private void AggiungiOggetti()
         {
-            Uri source;// to do sistemare
-            source = new Uri(@"/images/titanic.png", UriKind.RelativeOrAbsolute);
+            Uri source;
+            source = new Uri(@"/Images/titanic.png", UriKind.RelativeOrAbsolute);
             BitmapImage bitmpas = new BitmapImage(source);
             immagine = new Image();
             immagine.Source = bitmpas;
             immagine.Margin = new Thickness(300, 50, 0, 0);
             Acquario.Children.Add(immagine);
         }
+        int x = 0;
+        int y = 0;
+        private void Translate_Click(object sender, RoutedEventArgs e)
+        {
+            TranslateTransform translateTransform;
+            translateTransform = new TranslateTransform(--x,++y);
+            immagine.RenderTransform = translateTransform;
+        }
+        int gradi = 0;
+        private void RotateSx_Click(object sender, RoutedEventArgs e)
+        {
+            RotateTransform rotateTransform;
+            rotateTransform = new RotateTransform(gradi+=10);
+            immagine.RenderTransform = rotateTransform;
+        }
 
-        
+        private void RotateDx_Click(object sender, RoutedEventArgs e)
+        {
+            RotateTransform rotateTransform;
+            rotateTransform = new RotateTransform(gradi -= 10,100,100);
+            immagine.RenderTransform = rotateTransform;
+        }
     }
 }

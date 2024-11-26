@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppAcquario"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900" Width="3000">
     <Grid>
 
-        <Canvas x:Name="Acquario"  Height="300"  Width="500" Margin="276,42,19,41">
+        <Canvas x:Name="Acquario"  Height="700"  Width="2400" Margin="276,42,19,41">
             <Canvas.Background>
-                <ImageBrush ImageSource="/istockphoto-642258650-612x612.jpg"/>
+                <ImageBrush ImageSource="/Images/Sfondo.png"/>
             </Canvas.Background>
         </Canvas>
-        <TextBox x:Name="Contatore" HorizontalAlignment="Left" Margin="71,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Contatore" HorizontalAlignment="Left" Margin="59,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="36"/>
+        <Button x:Name="Translate" Content="Trans" HorizontalAlignment="Left" Margin="45,443,0,0" VerticalAlignment="Top" Height="92" Width="175" Click="Translate_Click"/>
+        <Button x:Name="RotateSx" Content="Rotate Sx" HorizontalAlignment="Left" Margin="45,569,0,0" VerticalAlignment="Top" Height="86" Width="172" Click="RotateSx_Click"/>
+        <Button x:Name="RotateDx" Content="Rotate Dx" HorizontalAlignment="Left" Margin="252,569,0,0" VerticalAlignment="Top" Height="86" Width="172" Click="RotateDx_Click"/>
 
     </Grid>
 </Window>
