@@ -8,8 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Threading;
-//Malzone Pietro 4H 22/11/2024 wpf app acquario
+using WpfLibrary;
+
 namespace WpfAppAcquario
 {
     /// <summary>
@@ -20,58 +20,11 @@ namespace WpfAppAcquario
         public MainWindow()
         {
             InitializeComponent();
-            SetupTimer();
-            AggiungiOggetti();
-        }
-        DispatcherTimer timer;
-        void SetupTimer()
-        {
-            timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += new EventHandler(timer_tick);
-            timer.Start();
+            AnimatoInAcqua pesce1 = new AnimatoInAcqua();
+            Acquario.Children.Add(pesce1.AggiungiConAnimazione("pngegg.png", 1500, 100));
+            Inanimato pianta1 = new Inanimato();
+            Acquario.Children.Add(pianta1.Aggiungi("alga.png", new Thickness(0, 400, 200, 200)));
 
-        }
-        int i = 0;
-        
-        void timer_tick(object sender,EventArgs args)
-        {
-            i++;
-            Contatore.Text = i.ToString();
-            
-        }
-        Image immagine;
-        private void AggiungiOggetti()
-        {
-            Uri source;
-            source = new Uri(@"/Images/titanic.png", UriKind.RelativeOrAbsolute);
-            BitmapImage bitmpas = new BitmapImage(source);
-            immagine = new Image();
-            immagine.Source = bitmpas;
-            immagine.Margin = new Thickness(300, 50, 0, 0);
-            Acquario.Children.Add(immagine);
-        }
-        int x = 0;
-        int y = 0;
-        private void Translate_Click(object sender, RoutedEventArgs e)
-        {
-            TranslateTransform translateTransform;
-            translateTransform = new TranslateTransform(--x,++y);
-            immagine.RenderTransform = translateTransform;
-        }
-        int gradi = 0;
-        private void RotateSx_Click(object sender, RoutedEventArgs e)
-        {
-            RotateTransform rotateTransform;
-            rotateTransform = new RotateTransform(gradi+=10);
-            immagine.RenderTransform = rotateTransform;
-        }
-
-        private void RotateDx_Click(object sender, RoutedEventArgs e)
-        {
-            RotateTransform rotateTransform;
-            rotateTransform = new RotateTransform(gradi -= 10,100,100);
-            immagine.RenderTransform = rotateTransform;
         }
     }
 }

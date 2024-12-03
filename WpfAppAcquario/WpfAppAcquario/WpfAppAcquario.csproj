@@ -9,17 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Fish.png" />
-    <None Remove="Images\Sfondo.png" />
-    <None Remove="Images\titanic.png" />
+    <None Remove="Images\alga.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Sfondo.png" />
-    <Content Include="Images\Fish.png">
+    <ProjectReference Include="..\WpfLibrary\WpfLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\alga.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\titanic.png">
+    <Content Include="Images\background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\pngegg.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
