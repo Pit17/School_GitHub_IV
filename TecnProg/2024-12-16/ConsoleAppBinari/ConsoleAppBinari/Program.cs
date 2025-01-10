@@ -1,4 +1,4 @@
-﻿
+﻿ 
 ﻿using Microsoft.Win32.SafeHandles;
 using System;
 using System.Text;
@@ -126,10 +126,10 @@ namespace CorsaConTreni
             WriteLine("                             |" + new string(' ', 5) + "|                             |" + new string(' ', 5) + "|");
             WriteLine("                             |" + new string(' ', 5) + "|                             |" + new string(' ', 5) + "|");
             WriteLine("░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░■" + new string(' ', 5) + "■░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░■" + new string(' ', 5) + "■░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░");
-            WriteLine("                              " + new string(' ', 5) +  "                              " + new string(' ', 5));          
-            WriteLine("                              " + new string(' ', 5) +  "                              " + new string(' ', 5));
-            WriteLine("                              " + new string(' ', 5) +  "                              " + new string(' ', 5));
-            WriteLine("                              " + new string(' ', 5) +  "                              " + new string(' ', 5));
+            WriteLine("                              " + new string(' ', 5) + "                               " + new string(' ', 5));          
+            WriteLine("                              " + new string(' ', 5) + "                               "  + new string(' ', 5));
+            WriteLine("                              " + new string(' ', 5) + "                               " + new string(' ', 5));
+            WriteLine("                              " + new string(' ', 5) + "                               " + new string(' ', 5));
             WriteLine("░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░■" + new string(' ', 5) + "■░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░■" + new string(' ', 5) + "■░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░");
             WriteLine("                             |" + new string(' ', 5) + "|                             |" + new string(' ', 5) + "|");
             WriteLine("                             |" + new string(' ', 5) + "|                             |" + new string(' ', 5) + "|");

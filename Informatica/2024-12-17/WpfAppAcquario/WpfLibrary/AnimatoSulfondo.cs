@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Threading;
-using System.Windows.Media.Imaging;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows;
@@ -13,37 +8,22 @@ namespace WpfLibrary
 {
     public class AnimatoSulfondo : Inanimato
     {
-        private DispatcherTimer timer;
         private double velocita = 5;
         private bool direzioneDestra = true; // True: verso destra, False: verso sinistra
 
         public AnimatoSulfondo() : base() { }
 
-        public Image AggiungiConAnimazione(string nome_foto, int altezzaTop, double canvasWidth)
+        public Image AggiungiConAnimazione(string nome_foto, int altezzaTop, double canvasWidth, DispatcherTimer timer)
         {
-
-            Thickness luogo = new Thickness(0, altezzaTop, 0, 0);//pos iniziale
+            Thickness luogo = new Thickness(0, altezzaTop, 0, 0); // Posizione iniziale
             Image immagine = base.Aggiungi(nome_foto, luogo);
-
-
-            StartAnimazione(immagine, canvasWidth);
-
-            return immagine;
-        }
-
-        private void StartAnimazione(Image immagine, double canvasWidth)
-        {
-            timer = new DispatcherTimer
-            {
-                Interval = TimeSpan.FromMilliseconds(32)
-            };
 
             timer.Tick += (sender, e) =>
             {
                 MuoviImmagine(immagine, canvasWidth);
             };
 
-            timer.Start();
+            return immagine;
         }
 
         private void MuoviImmagine(Image immagine, double canvasWidth)
@@ -84,4 +64,3 @@ namespace WpfLibrary
         }
     }
 }
-

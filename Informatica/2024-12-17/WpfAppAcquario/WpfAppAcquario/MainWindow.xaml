@@ -5,12 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppAcquario"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1500">
-    <Grid>
-        <Canvas x:Name="Acquario" Height="600" Width="1500" >
-            <Canvas.Background>
-                <ImageBrush ImageSource="/Images/background.png"/>
-            </Canvas.Background>
-        </Canvas>
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        Title="MainWindow" 
+        Height="600" Width="1500">
+
+    <Grid MouseDown="Grid_MouseDown" >
+
+        <Border CornerRadius="20" ClipToBounds="True">
+            <Canvas x:Name="Acquario" Height="600" Width="1500">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="/Images/background.png" />
+                </Canvas.Background>
+            </Canvas>
+        </Border>
+
+
+        <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Top" 
+                        Margin="0,10,5,0">
+
+            <Button Content="—" Width="30" Height="30" Margin="5,0" 
+                        Style="{StaticResource FlatButtonStyle}" 
+                        Click="Minimize_Click" />
+
+            <Button Content="X" Width="30" Height="30" Margin="5,0" 
+                        Style="{StaticResource FlatButtonCloseStyle}" 
+                        Click="Close_Click" />
+        </StackPanel>
+
     </Grid>
 </Window>

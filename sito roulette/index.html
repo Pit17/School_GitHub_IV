@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4H Slot</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2c003e;
+            color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slot-machine {
+            border: 3px solid #ffcc00;
+            border-radius: 20px;
+            padding: 20px;
+            background: linear-gradient(145deg, #4a0072, #2c003e);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), inset 0 5px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .slot-machine h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .slot-container {
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: #ffcc00;
+            margin: 5px;
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .slot {
+            display: flex;
+            flex-direction: column;
+            transform: translateY(0);
+            transition: transform 0s;
+        }
+
+        .slot img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        #spinButton {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-shadow: 1px 1px 3px #000;
+            transition: background-color 0.3s ease;
+        }
+
+        #spinButton:hover {
+            background-color: #e65c00;
+        }
+
+        #lever {
+            width: 20px;
+            height: 100px;
+            background-color: #ff6600;
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            transform-origin: top;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        #lever:active {
+            transform: translateY(-50%) rotate(30deg);
+        }
+
+        #message {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="slot-machine">
+            <h1>4H Slot Machine</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="slot-container">
+                        <div id="slot1" class="slot">
+                            <img src="images/Angio.png" alt="Slot 1">
+                            <img src="images/Antonio.png" alt="Slot 1">
+                            <img src="images/Bovo.png" alt="Slot 1">
+                            <img src="images/Cecca.png" alt="Slot 1">
+                            <img src="images/Daniele.png" alt="Slot 1">
+                            <img src="images/Lorenzo.png" alt="Slot 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="slot-container">
+                        <div id="slot2" class="slot">
+                            <img src="images/Angio.png" alt="Slot 2">
+                            <img src="images/Antonio.png" alt="Slot 2">
+                            <img src="images/Bovo.png" alt="Slot 2">
+                            <img src="images/Cecca.png" alt="Slot 2">
+                            <img src="images/Daniele.png" alt="Slot 2">
+                            <img src="images/Lorenzo.png" alt="Slot 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="slot-container">
+                        <div id="slot3" class="slot">
+                            <img src="images/Angio.png" alt="Slot 3">
+                            <img src="images/Antonio.png" alt="Slot 3">
+                            <img src="images/Bovo.png" alt="Slot 3">
+                            <img src="images/Cecca.png" alt="Slot 3">
+                            <img src="images/Daniele.png" alt="Slot 3">
+                            <img src="images/Lorenzo.png" alt="Slot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="spinButton" class="mt-4">Spin</button>
+            <div id="lever"></div>
+            <p id="message" class="mt-3"></p>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const spinButton = document.getElementById('spinButton');
+        const lever = document.getElementById('lever');
+        const message = document.getElementById('message');
+
+        function spinSlots(slotElement, resultIndex) {
+            const totalImages = slotElement.children.length;
+            const totalSpins = 3 * totalImages + resultIndex; 
+            const offset = -totalSpins * 120; 
+            slotElement.style.transition = "transform 3s cubic-bezier(0.25, 1, 0.5, 1)";
+            slotElement.style.transform = `translateY(${offset}px)`;
+
+            
+            setTimeout(() => {
+                const finalOffset = -resultIndex * 120;
+                slotElement.style.transition = "none";
+                slotElement.style.transform = `translateY(${finalOffset}px)`;
+            }, 3000);
+        }
+
+        function resetSlots(slotElement) {
+            slotElement.style.transition = "none";
+            slotElement.style.transform = "translateY(0)";
+        }
+
+        spinButton.addEventListener('click', () => {
+            lever.style.transform = "translateY(-50%) rotate(30deg)";
+            setTimeout(() => lever.style.transform = "translateY(-50%) rotate(0deg)", 300);
+
+            const slot1 = document.getElementById('slot1');
+            const slot2 = document.getElementById('slot2');
+            const slot3 = document.getElementById('slot3');
+
+            
+            resetSlots(slot1);
+            resetSlots(slot2);
+            resetSlots(slot3);
+
+            setTimeout(() => {
+                
+                const results = [
+                    Math.floor(Math.random() * 5),
+                    Math.floor(Math.random() * 5),
+                    Math.floor(Math.random() * 5)
+                ];
+
+                spinSlots(slot1, results[0]);
+                spinSlots(slot2, results[1]);
+                spinSlots(slot3, results[2]);
+
+                
+                setTimeout(() => {
+                    if (results[0] === results[1] && results[1] === results[2]) {
+                        message.textContent = '🎉 Hai Vinto!! 🎉';
+                        message.style.color = '#28a745';
+                    } else {
+                        message.textContent = 'Riprova :(';
+                        message.style.color = '#dc3545';
+                    }
+                }, 3100);
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>

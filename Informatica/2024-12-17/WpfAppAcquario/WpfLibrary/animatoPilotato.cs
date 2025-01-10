@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace WpfLibrary
 {
     public class animatoPilotato : AnimatoSulfondo
     {
-
-        private double velocita = 10; // Velocità in pixel per pressione di tasto
-        private Image immagineAnimata;
-        private double canvasWidth;
-        private double canvasHeight;
-        private Canvas acquario;
+        protected double velocita = 10; // Velocità in pixel per pressione di tasto
+        protected Image immagineAnimata;
+        protected double canvasWidth;
+        protected double canvasHeight;
+        protected Canvas canvas;
 
         public animatoPilotato() : base() { }
 
-        public Image AggiungiConControllo(string nome_foto, int altezzaTop, double canvasWidth, double canvasHeight, Window finestra, Canvas acquario)
+        public Image AggiungiConControllo(string nome_foto, int altezzaTop, double canvasWidth, double canvasHeight, Window finestra, Canvas canvas)
         {
             // Imposta la posizione iniziale
             Thickness luogo = new Thickness(0, altezzaTop, 0, 0);
@@ -27,15 +27,16 @@ namespace WpfLibrary
             this.immagineAnimata = immagine;
             this.canvasWidth = canvasWidth;
             this.canvasHeight = canvasHeight;
-            this.acquario = acquario;
+            this.canvas = canvas;
 
             // Associa gli eventi di tastiera
+            finestra.KeyDown -= Finestra_KeyDown;
             finestra.KeyDown += Finestra_KeyDown;
 
             return immagine;
         }
 
-        protected void Finestra_KeyDown(object sender, KeyEventArgs e)
+        protected new void Finestra_KeyDown(object sender, KeyEventArgs e)
         {
             double currentX = Canvas.GetLeft(immagineAnimata);
             double currentY = Canvas.GetTop(immagineAnimata);
@@ -76,7 +77,7 @@ namespace WpfLibrary
             Canvas.SetTop(immagineAnimata, currentY);
         }
 
-        private void SpecchiaImmagine(bool versoDestra)
+        protected void SpecchiaImmagine(bool versoDestra)
         {
             ScaleTransform flipTransform = new ScaleTransform
             {
@@ -88,4 +89,3 @@ namespace WpfLibrary
         }
     }
 }
-

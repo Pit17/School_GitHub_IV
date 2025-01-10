@@ -8,7 +8,6 @@ namespace WpfLibrary
 {
     public class AnimatoInAcqua : Inanimato
     {
-        private DispatcherTimer timer;
         private double velocitaX;
         private double velocitaY;
         private Random random;
@@ -21,7 +20,7 @@ namespace WpfLibrary
             random = new Random();
         }
 
-        public Image AggiungiConAnimazione(string nome_foto, int altezzaTop, double canvasWidth, double canvasHeight)
+        public Image AggiungiConAnimazione(string nome_foto, int altezzaTop, double canvasWidth, double canvasHeight, DispatcherTimer timer)
         {
             // Imposta la posizione iniziale
             Thickness luogo = new Thickness(0, altezzaTop, 0, 0);
@@ -37,27 +36,12 @@ namespace WpfLibrary
             this.canvasHeight = canvasHeight;
 
             // Avvia l'animazione
-            StartAnimazione();
-
-            return immagine;
-        }
-
-        private void StartAnimazione()
-        {
-            timer = new DispatcherTimer
+            timer.Tick += (sender, e) =>
             {
-                Interval = TimeSpan.FromMilliseconds(32) 
+                MuoviImmagine();
             };
 
-            // Associa il metodo al tick del timer
-            timer.Tick += Timer_Tick;
-
-            timer.Start();
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            MuoviImmagine();
+            return immagine;
         }
 
         private void MuoviImmagine()
