@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Pietro Malzone 4H 21/02/2025-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiroDeiDadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <h1>Il gioco dei dati</h1>
+        <h2 id="saldo">Il tuo saldo è : 100 sesterzi</h2>
+    </section>
+    <section>
+        <label for="puntata">Scommessa:</label>
+        <input type="number" id="puntata" min="1">
+        <br>
+        <br>
+        <label for="scommessa">Su quale numero punti:</label>
+        <input type="number" id="scommessa" min="2" max="12">
+        <br>
+        <br>
+        <button onclick="gioca()">Scommetti!</button>
+        <button onclick="aggiungiSaldo()">Ricomincia</button>
+        <h2 id="risultato"></h2>
+        
+    </section>
+    <script src="Esercizio.js"></script>
+</body>
+
+</html>

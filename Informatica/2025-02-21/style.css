@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #4C7B8B;
+    color: #EFB036;
+    text-align: center;
+  }
+section {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #3B6790;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    color: #EFB036;
+  }
