@@ -6,7 +6,7 @@
   
 </div>
 
-<h1 align="center">Hi, this repository contains all the computer science projects written in C#</h1>
+<h1 align="center">Hi, this repository contains all the computer science projects written in C# 🐟🐟🐟🐠🐡🦈🐡🐠🐟</h1>
 
 <h3 align="center">~Pietro Malzone~</h3>
 

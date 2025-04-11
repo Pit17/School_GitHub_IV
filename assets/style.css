@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #f2f2f2;
+}
+
+.x {
+  color: blue;
+}
+
+.o {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+.game-over {
+  background-color: yellow;
+}
+
+.gradient-advanced{
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #ff1b00 0%, #ff0000 100%),
+    linear-gradient(360deg, #ff9700 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #ff0087 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #ff0087 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+
+}
+
+.btn-rounded{
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border : none;
+  font-family:  "Special Gothic Expanded One", sans-serif;
+  font-style: normal;
+  font-size: xx-large;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40%;
+}
